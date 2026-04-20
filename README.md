@@ -24,31 +24,31 @@
 │                   XiaoZhi ESP32 Architecture                    │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Hardware Layer (ESP32, Audio Codec, Display, LED)       │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│           ↑                                                      │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Application Core (Main Event Loop)                      │  │
-│  │  • FreeRTOS Task Scheduling                             │  │
-│  │  • Event-driven Architecture (13 Event Types)           │  │
-│  │  • State Machine (7 Device States)                      │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│           ↑                  ↑                   ↑               │
-│  ┌──────────────┐  ┌──────────────────┐  ┌──────────────┐     │
-│  │ Audio Service│  │ Protocol Manager │  │ Display UI   │     │
-│  │ • Microphone │  │ • WebSocket      │  │ • Status Bar │     │
-│  │ • Speaker   │  │ • MQTT + UDP     │  │ • Chat View  │     │
-│  │ • Wake Word │  │ • HTTP           │  │ • Alerts     │     │
-│  │ • AEC/VAD   │  │ • MCP            │  └──────────────┘     │
-│  └──────────────┘  └──────────────────┘                        │
-│           ↓                  ↓                                   │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Cloud Services (Optional or Self-Hosted)                │  │
-│  │  • LLM Inference (Qwen, DeepSeek)                        │  │
-│  │  • Asset Distribution                                    │  │
-│  │  • Remote Control & Configuration                       │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Hardware Layer (ESP32, Audio Codec, Display, LED)       │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│           ↑                                                     │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Application Core (Main Event Loop)                      │   │
+│  │  • FreeRTOS Task Scheduling                              │   │
+│  │  • Event-driven Architecture (13 Event Types)            │   │
+│  │  • State Machine (7 Device States)                       │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│           ↑                  ↑                   ↑              │
+│  ┌──────────────┐  ┌──────────────────┐  ┌──────────────┐       │
+│  │ Audio Service│  │ Protocol Manager │  │ Display UI   │       │
+│  │ • Microphone │  │ • WebSocket      │  │ • Status Bar │       │
+│  │ • Speaker    │  │ • MQTT + UDP     │  │ • Chat View  │       │
+│  │ • Wake Word  │  │ • HTTP           │  │ • Alerts     │       │
+│  │ • AEC/VAD    │  │ • MCP            │  └──────────────┘       │
+│  └──────────────┘  └──────────────────┘                         │
+│           ↓                  ↓                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Cloud Services (Optional or Self-Hosted)                │   │
+│  │  • LLM Inference (Qwen, DeepSeek)                        │   │
+│  │  • Asset Distribution                                    │   │
+│  │  • Remote Control & Configuration                        │   │
+│  └──────────────────────────────────────────────────────────┘   │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -818,31 +818,31 @@ Phù hợp cho:
 │                   XiaoZhi ESP32 Architecture                    │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Hardware Layer (ESP32, Audio Codec, Display, LED)       │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│           ↑                                                      │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Application Core (Main Event Loop)                      │  │
-│  │  • FreeRTOS Task Scheduling                             │  │
-│  │  • Event-driven Architecture (13 Event Types)           │  │
-│  │  • State Machine (7 Device States)                      │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│           ↑                  ↑                   ↑               │
-│  ┌──────────────┐  ┌──────────────────┐  ┌──────────────┐     │
-│  │ Audio Service│  │ Protocol Manager │  │ Display UI   │     │
-│  │ • Microphone │  │ • WebSocket      │  │ • Status Bar │     │
-│  │ • Speaker   │  │ • MQTT + UDP     │  │ • Chat View  │     │
-│  │ • Wake Word │  │ • HTTP           │  │ • Alerts     │     │
-│  │ • AEC/VAD   │  │ • MCP            │  └──────────────┘     │
-│  └──────────────┘  └──────────────────┘                        │
-│           ↓                  ↓                                   │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Cloud Services (Optional or Self-Hosted)                │  │
-│  │  • LLM Inference (Qwen, DeepSeek)                        │  │
-│  │  • Asset Distribution                                    │  │
-│  │  • Remote Control & Configuration                       │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Hardware Layer (ESP32, Audio Codec, Display, LED)       │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│           ↑                                                     │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Application Core (Main Event Loop)                      │   │
+│  │  • FreeRTOS Task Scheduling                              │   │
+│  │  • Event-driven Architecture (13 Event Types)            │   │
+│  │  • State Machine (7 Device States)                       │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│           ↑                  ↑                   ↑              │
+│  ┌──────────────┐  ┌──────────────────┐  ┌──────────────┐       │
+│  │ Audio Service│  │ Protocol Manager │  │ Display UI   │       │
+│  │ • Microphone │  │ • WebSocket      │  │ • Status Bar │       │
+│  │ • Speaker    │  │ • MQTT + UDP     │  │ • Chat View  │       │
+│  │ • Wake Word  │  │ • HTTP           │  │ • Alerts     │       │
+│  │ • AEC/VAD    │  │ • MCP            │  └──────────────┘       │
+│  └──────────────┘  └──────────────────┘                         │
+│           ↓                  ↓                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Cloud Services (Optional or Self-Hosted)                │   │
+│  │  • LLM Inference (Qwen, DeepSeek)                        │   │
+│  │  • Asset Distribution                                    │   │
+│  │  • Remote Control & Configuration                        │   │
+│  └──────────────────────────────────────────────────────────┘   │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
