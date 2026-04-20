@@ -1,4 +1,4 @@
-# 🏗️ KIẾN TRÚC DỰ ÁN XIAOZHI ESP32 - HƯỚNG DẪN TOÀN DIỆN
+# 🏗️ KIẾN TRÚC DỰ ÁN XIAOZHI ESP32
 
 ---
 
