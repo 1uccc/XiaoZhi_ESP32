@@ -565,7 +565,7 @@ refer to the following open-source projects:"
 ├─────────────────────────────────────┤
 │  ✅ Triển khai trên máy cá nhân     │
 │  ✅ Hoàn toàn kiểm soát             │
-│  ✅ Không phí dịch vụ                │
+│  ✅ Không phí dịch vụ               │
 │  ✅ Python/Java/Go                  │
 │  ✅ MIT Open Source                 │
 └─────────────────────────────────────┘
@@ -642,30 +642,30 @@ refer to the following open-source projects:"
 ├────────────────────────────────────────────────┤
 │                                                │
 │  Cloud Services (SaaS)                         │
-│  ┌─────────────────────────────────────────┐  │
-│  │  xiaozhi.me                             │  │
-│  │  • LLM Inference (Qwen/DeepSeek)       │  │
-│  │  • IoT Control (MCP)                   │  │
-│  │  • Web Console                         │  │
-│  │  • Asset Distribution                  │  │
-│  └─────────────────────────────────────────┘  │
-│           ↕                                     │
-│           WebSocket / MQTT+UDP / HTTP           │
-│           ↕                                     │
-│  ┌─────────────────────────────────────────┐  │
-│  │  Edge Devices (IoT)                     │  │
-│  │  • ESP32 (C3, S3, P4)                  │  │
-│  │  • 70+ Hardware support                │  │
-│  │  • Local processing                    │  │
-│  └─────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────┐   │
+│  │  xiaozhi.me                             │   │
+│  │  • LLM Inference (Qwen/DeepSeek)        │   │
+│  │  • IoT Control (MCP)                    │   │
+│  │  • Web Console                          │   │
+│  │  • Asset Distribution                   │   │
+│  └─────────────────────────────────────────┘   │
+│           ↕                                    │
+│           WebSocket / MQTT+UDP / HTTP          │
+│           ↕                                    │
+│  ┌─────────────────────────────────────────┐   │
+│  │  Edge Devices (IoT)                     │   │
+│  │  • ESP32 (C3, S3, P4)                   │   │
+│  │  • 70+ Hardware support                 │   │
+│  │  • Local processing                     │   │
+│  └─────────────────────────────────────────┘   │
 │                                                │
 │  Optional: Self-Hosted Servers                 │
-│  ┌─────────────────────────────────────────┐  │
-│  │  Python / Java / Go Server             │  │
-│  │  • Complete control                    │  │
-│  │  • No service fees                     │  │
-│  │  • Open-source                         │  │
-│  └─────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────┐   │
+│  │  Python / Java / Go Server              │   │
+│  │  • Complete control                     │   │
+│  │  • No service fees                      │   │
+│  │  • Open-source                          │   │
+│  └─────────────────────────────────────────┘   │
 └────────────────────────────────────────────────┘
 ```
 
